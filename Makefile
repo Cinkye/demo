@@ -16,7 +16,7 @@ BIN_TARGET := ${TARGET}
 
 CXX := g++
 CXXFLAGS := -std=c++11 -g -I${DIR_INC} $(foreach includedir,$(INCLUDE_DIRS),-I$(includedir))
-LIBS := -lz -lpthread
+LIBS := -lpthread
 LD_FLAGS := $(foreach librarydir,$(LIBRARY_DIRS),-L$(librarydir)) $(LIBS)
 
 
